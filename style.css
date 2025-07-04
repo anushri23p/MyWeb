@@ -42,7 +42,7 @@ header .logo span{
     color: palevioletred;
 }
 body {
-  background-image: url("https://t4.ftcdn.net/jpg/07/89/04/87/360_F_789048781_ge1YP5AUuQdcV0QeTpGKNGF5KP4JC8XZ.jpg");
+  background-image: url("https://wallpapers.com/images/featured/pink-background-5oqf6il3seg0wq0i.jpg");
   background-size: cover;        
   background-repeat: no-repeat;  
   padding-top: 6rem; 
@@ -218,7 +218,6 @@ img {
   animation: slideFade 1.5s ease-out;
 }
 
-/* Slide + fade in */
 @keyframes slideFade {
   0% {
     opacity: 0;
@@ -229,3 +228,69 @@ img {
     transform: translateY(0);
   }
 }
+
+.art-types {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 1.5rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.art-types h2 {
+  font-size: 2.2rem;
+  color: palevioletred;
+  margin-bottom: 2rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+.art-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.art-card {
+  background: white;
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.art-card:hover {
+  transform: scale(1.05);
+  background: palevioletred;
+  color: white;
+}
+.why-i-create {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 3rem auto;
+  padding: 2.5rem 1.5rem;
+  border-radius: 1.2rem;
+  max-width: 700px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.why-i-create h2 {
+  font-size: 2rem;
+  color: palevioletred;
+  font-family: 'Dancing Script', cursive;
+  margin-bottom: 1rem;
+}
+
+.why-i-create p {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #444;
+  line-height: 1.8;
+  white-space: pre-line;
+}
+
