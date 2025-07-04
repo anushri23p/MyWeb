@@ -117,52 +117,7 @@ footer .navfooter a{
     
 }
 
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
-    height: auto;
-  }
 
-  .navbar a {
-    display: block;
-    padding: 0.5rem 0;
-    font-size: 1rem;
-  }
-
-  .landing h1 {
-    padding-bottom: 1rem;
-    font-size: 2rem;
-  }
-
-  .landing p {
-    font-size: 1rem;
-    padding-bottom: 2rem;
-  }
-
-  .btn {
-    padding: 0.6rem 1rem;
-    font-size: 0.9rem;
-  }
-
-  #about {
-    padding: 2rem 1rem;
-    font-size: 1rem;
-  }
-
-  footer {
-    flex-direction: column;
-    height: auto;
-    padding: 1rem;
-    text-align: center;
-  }
-
-  .navfooter a {
-    display: block;
-    margin: 0.5rem 0;
-  }
-}
 
 img {
   max-width: 100%;
@@ -294,3 +249,95 @@ img {
   white-space: pre-line;
 }
 
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .navbar a {
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  .landing {
+    padding: 3rem 1rem;
+  }
+
+  .landing h1 {
+    font-size: 1.8rem;
+  }
+
+  .landing p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  #about {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+    margin: 1rem;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .navfooter a {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  .top-quote {
+    margin: 2rem 1rem;
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
+  .art-types {
+    padding: 2rem 1rem;
+  }
+
+  .art-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .art-card {
+    width: 80%;
+    font-size: 1rem;
+  }
+
+  .why-i-create {
+    padding: 2rem 1rem;
+    margin: 2rem 1rem;
+  }
+
+  .why-i-create h2 {
+    font-size: 1.6rem;
+  }
+
+  .why-i-create p {
+    font-size: 1rem;
+  }
+}
