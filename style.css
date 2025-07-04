@@ -97,16 +97,24 @@ footer .navfooter a{
   background-color: rgba(255, 255, 255, 0.6);
 }
 
+.landing h1{
+    padding-bottom: 1rem;
+}
+.landing p{
+     padding-bottom: 2rem;
+}
  .btn{
     background-color: rgba(85, 84, 84, 0.9);
     border-radius: 2rem;
     padding: 1rem;
     color: white;
     font-weight: bold;
+   
 }
 
 .btn:hover{
-    background-color: rgba(206, 122, 150,0.8);
+    background-color: rgba(236, 132, 166, 0.8);
+    
 }
 
 @media (max-width: 768px) {
@@ -124,11 +132,13 @@ footer .navfooter a{
   }
 
   .landing h1 {
+    padding-bottom: 1rem;
     font-size: 2rem;
   }
 
   .landing p {
     font-size: 1rem;
+    padding-bottom: 2rem;
   }
 
   .btn {
@@ -158,4 +168,64 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+
+.landing {
+    animation: landinghomeabout 1s ease-in-out ;
+}
+@keyframes landinghomeabout {
+    0%{
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+}
+
+#about{
+    animation: landingabout 1s ease-in;
+}
+
+@keyframes landingabout{
+    0%{
+        transform: translateY(2rem);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+}
+
+.top-quote {
+  margin: 6rem auto 2rem;
+  padding: 1.2rem 2rem;
+  text-align: center;
+  font-size: 1.3rem;
+  font-style: italic;
+  font-family: 'Georgia', serif;
+  color: #3b3b3b;
+  background: linear-gradient(to right, #ffe6f0, #fef6ff);
+  border-left: 4px solid palevioletred;
+  border-radius: 1rem;
+  
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  animation: slideFade 1.5s ease-out;
+}
+
+/* Slide + fade in */
+@keyframes slideFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
