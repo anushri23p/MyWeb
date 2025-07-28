@@ -17,7 +17,7 @@ Welcome to my personal art portfolio website! This site showcases my collection 
 
 ## 🖌️ Art Styles Featured
 
-- **Nippan Art** – Traditional Indian decorative art.  
+- **Lippan Art** – Traditional Indian decorative art.  
 - **Zentangle Art** – Abstract patterns made with structured designs.  
 - **Madhubani Art** – Folk art from Bihar, known for its vibrant colors and fine lines.
 
