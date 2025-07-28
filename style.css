@@ -1,71 +1,79 @@
-*{
-    margin: 0; padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: capitalize;
-    outline: none; border: none;
-    text-decoration: none;
+/* All CSS class and ID names have been converted to kebab-case */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  text-decoration: none;
 }
-
-
 
 header {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    background: white;
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    box-shadow: 0 0.3rem 1rem rgb(113, 113, 113);
-    height: 5rem;
-    z-index: 1000;
-}
-header .logo{
-    font-size: 1.5rem;
-    color: #6e6d6d;
-    font-weight: bolder;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0.3rem 1rem rgb(113, 113, 113);
+  height: 5rem;
+  z-index: 1000;
 }
 
-header .logo span{
-    color: palevioletred;
-}
- header .navbar a{
-    font-size: 1rem;
-    padding: 0 1.5rem;
-    align-items: center;
-    color: #363636;
-   
+header .logo {
+  font-size: 1.5rem;
+  color: #6e6d6d;
+  font-weight: bolder;
 }
 
-.navbar a:hover{
-    color: palevioletred;
+header .logo span {
+  color: palevioletred;
 }
+
+header .navbar a {
+  font-size: 1rem;
+  padding: 0 1.5rem;
+  align-items: center;
+  color: #363636;
+}
+
+.navbar a:hover {
+  color: palevioletred;
+}
+
 body {
   background-image: url("https://wallpapers.com/images/featured/pink-background-5oqf6il3seg0wq0i.jpg");
-  background-size: cover;        
-  background-repeat: no-repeat;  
-  padding-top: 6rem; 
-  padding-bottom: 6rem; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   max-width: 100%;
 }
+
 footer {
-    position: fixed;
-     bottom: 0; right: 0; left: 0;
-    background: rgb(255, 255, 255);
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content:space-evenly;
-    box-shadow: 0 0.3rem 1rem rgb(113, 113, 113);
-    height: 6rem;
-    z-index: 1000;
-    
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgb(255, 255, 255);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 0.3rem 1rem rgb(113, 113, 113);
+  height: 6rem;
+  z-index: 1000;
 }
 
-footer .navfooter a{
-    color: #666;
-    justify-content: space-evenly;
+footer .nav-footer a {
+  color: #666;
+  justify-content: space-evenly;
 }
 
 #about {
@@ -78,14 +86,14 @@ footer .navfooter a{
   color: #333;
   line-height: 1.8;
   font-size: 1.1rem;
-  
 }
+
 #about h2 {
   font-size: 2.5rem;
   color: palevioletred;
   margin-bottom: 2rem;
-  
 }
+
 #about p {
   margin-bottom: 1.5rem;
   text-align: justify;
@@ -95,29 +103,28 @@ footer .navfooter a{
   text-align: center;
   padding: 6rem 2rem 3rem;
   background-color: rgba(255, 255, 255, 0.6);
+  animation: landing-home-about 1s ease-in-out;
 }
 
-.landing h1{
-    padding-bottom: 1rem;
-}
-.landing p{
-     padding-bottom: 2rem;
-}
- .btn{
-    background-color: rgba(85, 84, 84, 0.9);
-    border-radius: 2rem;
-    padding: 1rem;
-    color: white;
-    font-weight: bold;
-   
+.landing h1 {
+  padding-bottom: 1rem;
 }
 
-.btn:hover{
-    background-color: rgba(236, 132, 166, 0.8);
-    
+.landing p {
+  padding-bottom: 2rem;
 }
 
+.btn {
+  background-color: rgba(85, 84, 84, 0.9);
+  border-radius: 2rem;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+}
 
+.btn:hover {
+  background-color: rgba(236, 132, 166, 0.8);
+}
 
 img {
   max-width: 100%;
@@ -125,35 +132,30 @@ img {
   display: block;
 }
 
-
-.landing {
-    animation: landinghomeabout 1s ease-in-out ;
-}
-@keyframes landinghomeabout {
-    0%{
-        transform: translateY(5rem);
-        opacity: 0;
-    }
-
-    100%{
-        transform: translateY(0rem);
-        opacity: 1;
-    }
+@keyframes landing-home-about {
+  0% {
+    transform: translateY(5rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
 }
 
-#about{
-    animation: landingabout 1s ease-in;
+#about {
+  animation: landing-about 1s ease-in;
 }
 
-@keyframes landingabout{
-    0%{
-        transform: translateY(2rem);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(0rem);
-        opacity: 1;
-    }
+@keyframes landing-about {
+  0% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
 }
 
 .top-quote {
@@ -167,13 +169,12 @@ img {
   background: linear-gradient(to right, #ffe6f0, #fef6ff);
   border-left: 4px solid palevioletred;
   border-radius: 1rem;
-  
   max-width: 800px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  animation: slideFade 1.5s ease-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  animation: slide-fade 1.5s ease-out;
 }
 
-@keyframes slideFade {
+@keyframes slide-fade {
   0% {
     opacity: 0;
     transform: translateY(-20px);
@@ -215,7 +216,7 @@ img {
   font-size: 1.1rem;
   font-weight: 500;
   color: #333;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
@@ -224,6 +225,7 @@ img {
   background: palevioletred;
   color: white;
 }
+
 .why-i-create {
   background-color: rgba(255, 255, 255, 0.6);
   margin: 3rem auto;
@@ -231,7 +233,7 @@ img {
   border-radius: 1.2rem;
   max-width: 700px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .why-i-create h2 {
@@ -302,7 +304,7 @@ img {
     gap: 0.5rem;
   }
 
-  .navfooter a {
+  .nav-footer a {
     display: block;
     margin: 0.5rem 0;
     font-size: 1rem;
